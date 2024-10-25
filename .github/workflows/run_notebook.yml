@@ -24,4 +24,4 @@ jobs:
  
       - name: Run the notebook
         run: |
-          jupyter nbconvert --to notebook --execute your_notebook.ipynb --output output.ipynb
+          jupyter nbconvert --to notebook --execute Table_Validation.ipynb --output output.ipynb
