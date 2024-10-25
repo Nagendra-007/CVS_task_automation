@@ -2,7 +2,7 @@ name: Run Notebook on Schedule
  
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour, adjust as needed
+    - cron: '*/5 * * * *'  # Runs every hour, adjust as needed
  
 jobs:
   run_notebook:
