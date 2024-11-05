@@ -33,4 +33,4 @@ jobs:
       env:
         GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/bigquery-key.json
       run: |
-        jupyter nbconvert --to notebook --execute Table_Validation.ipynb --output output.ipynb
+        jupyter nbconvert --to notebook --execute Hive_Bigquery_automation.ipynb --output output.ipynb
