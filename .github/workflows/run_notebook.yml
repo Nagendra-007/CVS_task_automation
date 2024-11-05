@@ -38,3 +38,8 @@ jobs:
         GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/bigquery-key.json
       run: |
         jupyter nbconvert --to notebook --execute Hive_Bigquery_automation.ipynb --output output.ipynb
+    - name: Upload output notebook
+      uses: actions/upload-artifact@v2
+      with:
+       name: output-notebook
+       path: output.ipynb
