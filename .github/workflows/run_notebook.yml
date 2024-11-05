@@ -39,7 +39,7 @@ jobs:
       run: |
         jupyter nbconvert --to notebook --execute Hive_Bigquery_automation.ipynb --output output.ipynb
     - name: Upload output notebook
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
        name: output-notebook
        path: output.ipynb
