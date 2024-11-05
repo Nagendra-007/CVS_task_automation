@@ -21,7 +21,8 @@ jobs:
       run: |
         pip install jupyter  # Ensure Jupyter is installed
         pip install nbconvert  # For executing notebooks
-        pip install google-cloud-bigquery  
+        pip install google-cloud-bigquery 
+        pip install pandas
         pip install pyhive
         pip install thrift
         pip install thrift-sasl
